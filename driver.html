@@ -34,7 +34,7 @@
         
         .app-page {
             display: none;
-            min-height: 100%; /* Allow page to grow and scroll */
+            min-height: 100%;
             animation: fadeIn 0.5s ease-in-out;
             padding: 1rem;
         }
@@ -46,7 +46,7 @@
         }
 
         #login-page.active {
-            justify-content: center; /* Keep login centered vertically */
+            justify-content: center;
         }
 
         @keyframes fadeIn {
@@ -84,7 +84,7 @@
 
         /* Driver Panel Styles */
         #driver-panel-page.active {
-            justify-content: flex-start; /* Align content to top */
+            justify-content: flex-start;
         }
 
         .app-header {
@@ -203,7 +203,7 @@
         </header>
         
         <!-- View 1: Select Bus -->
-        <main id="select-bus-view" class="w-100 flex-grow-1 d-flex flex-column justify-content-center">
+        <main id="select-bus-view" class="w-100 flex-grow-1 d-flex flex-column justify-content-center align-items-center">
             <div class="card shadow">
                 <div class="card-body text-center p-4">
                     <i class="bi bi-geo-alt-fill text-primary" style="font-size: 4rem;"></i>
@@ -223,7 +223,7 @@
         </main>
 
         <!-- View 2: Update Status -->
-        <main id="update-status-view" class="w-100 flex-grow-1 d-none flex-column">
+        <main id="update-status-view" class="w-100 flex-grow-1 d-none flex-column align-items-center">
              <div class="card bg-light my-4">
                 <div class="card-body text-center">
                     <p class="text-muted mb-0">Current Trip:</p>
@@ -430,4 +430,3 @@
     </script>
 </body>
 </html>
-
